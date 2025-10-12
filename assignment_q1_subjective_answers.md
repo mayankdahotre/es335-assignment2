@@ -24,16 +24,16 @@ Upon implementing both **Full-Batch Gradient Descent (GD)** and **Stochastic Gra
 
 
 _Dataset 1: True theta* = [ 0.9507064  99.98412345]
-Full Batch GD steps: 39610
-SGD steps: 1046
-Momentum GD steps: 314_
+* Full Batch GD steps: 39610
+* SGD steps: 1046
+* Momentum GD steps: 314_
 
 <img width="563" height="455" alt="image" src="https://github.com/user-attachments/assets/3d502834-efe2-4571-97a1-052063ebd339" />
 
 _Dataset 2: True theta* = [3.9507064  2.68246893]
-Full Batch GD steps: 131779
-SGD steps: 1334
-Momentum GD steps: 1247_
+* Full Batch GD steps: 131779
+* SGD steps: 1334
+* Momentum GD steps: 1247_
 
 ---
 
