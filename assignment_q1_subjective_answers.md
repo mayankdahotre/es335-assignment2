@@ -19,6 +19,21 @@ Upon implementing both **Full-Batch Gradient Descent (GD)** and **Stochastic Gra
     * **Loss Curve:** The loss curve was highly volatile, with frequent spikes and dips. However, the overall trend was downwards, indicating that the model was learning over time.
 
 
+<img width="567" height="455" alt="image" src="https://github.com/user-attachments/assets/a1a9ab06-c4fe-4097-b506-4bf4d7864368" />
+
+
+
+_Dataset 1: True theta* = [ 0.9507064  99.98412345]
+Full Batch GD steps: 39610
+SGD steps: 1046
+Momentum GD steps: 314_
+
+<img width="563" height="455" alt="image" src="https://github.com/user-attachments/assets/3d502834-efe2-4571-97a1-052063ebd339" />
+
+_Dataset 2: True theta* = [3.9507064  2.68246893]
+Full Batch GD steps: 131779
+SGD steps: 1334
+Momentum GD steps: 1247_
 
 ---
 
