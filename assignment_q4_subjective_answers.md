@@ -1375,3 +1375,21 @@ Best by RMSE: Rank 50 (RMSE=0.0112)
 
 
 **Overall Conclusion:** There is a direct trade-off between the **compression ratio** (which is higher for lower rank `r`) and the **reconstruction quality**. The amount of visual information or "complexity" in an image patch determines the minimum rank `r` required to reconstruct it with acceptable fidelity. Simple, smooth regions can be compressed aggressively (low `r`), while complex, detailed regions require a higher rank to preserve their information.
+
+
+
+| Patch Type        | r  | Reconstruction Quality | RMSE       | PSNR       | Observation                                                  |
+|------------------|----|----------------------|------------|------------|-------------------------------------------------------------|
+| Single-color (1)  | 5  | Excellent            | Very low   | Very high  | Patch is almost perfectly reconstructed; low rank sufficient. |
+|                  | 10 | Excellent            | Very low   | Very high  | No noticeable improvement; overkill.                       |
+|                  | 25 | Excellent            | Very low   | Very high  | Same as above.                                             |
+|                  | 50 | Excellent            | Very low   | Very high  | Full rank; identical to original.                          |
+| 2-3 color        | 5  | Poor                 | Moderate   | Moderate   | Only basic structure captured; colors slightly blended.   |
+|                  | 10 | Good                 | Lower      | Higher     | Colors and structure recovered well.                        |
+|                  | 25 | Very Good            | Low        | High       | Nearly perfect reconstruction.                              |
+|                  | 50 | Excellent            | Very low   | Very high  | Full rank; exact reconstruction.                            |
+| 5+ color          | 5  | Very Poor            | High       | Low        | Many details lost; patch appears blurry.                   |
+|                  | 10 | Poor                 | Moderate   | Moderate   | Some details recovered, still blurry.                      |
+|                  | 25 | Good                 | Lower      | Higher     | Most details reconstructed; minor loss in fine colors.     |
+|                  | 50 | Excellent            | Very low   | Very high  | Full rank; almost identical to original.                   |
+
