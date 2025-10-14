@@ -44,6 +44,7 @@ plt.show()
 
 
 #### Dataset 2
+
 ⁠```python
 np.random.seed(45)
 num_samples = 40
@@ -53,9 +54,9 @@ x1 = np.random.uniform(-1, 1, num_samples)
 f_x = 3*x1 + 4
 eps = np.random.randn(num_samples)
 y = f_x + eps
-```⁠
+⁠```
 
-⁠```python
+```python
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -78,8 +79,8 @@ plt.title('Synthetic Dataset')
 plt.legend()
 plt.grid(True)
 plt.show()
+
 ```
- ⁠
 
 <img width="678" height="547" alt="image" src="https://github.com/user-attachments/assets/fc9d6e19-9a60-4916-936a-b5e4d57521c8" />
 
