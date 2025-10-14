@@ -5,7 +5,7 @@
 ### Datasets
 
 #### Dataset 1
-⁠ python
+```python
 num_samples = 40
 np.random.seed(45) 
     
@@ -14,9 +14,9 @@ x1 = np.random.uniform(-20, 20, num_samples)
 f_x = 100*x1 + 1
 eps = np.random.randn(num_samples)
 y = f_x + eps
- ⁠
+```
 
-⁠ python
+```python
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -38,13 +38,13 @@ plt.title('Synthetic Dataset')
 plt.legend()
 plt.grid(True)
 plt.show()
- ⁠
+```
 
 <img width="716" height="547" alt="image" src="https://github.com/user-attachments/assets/cee34865-212f-4b57-a03c-b31c63f53f89" />
 
 
 #### Dataset 2
-⁠ python
+⁠```python
 np.random.seed(45)
 num_samples = 40
     
@@ -53,9 +53,9 @@ x1 = np.random.uniform(-1, 1, num_samples)
 f_x = 3*x1 + 4
 eps = np.random.randn(num_samples)
 y = f_x + eps
- ⁠
+```⁠
 
-⁠ python
+⁠```python
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -78,7 +78,7 @@ plt.title('Synthetic Dataset')
 plt.legend()
 plt.grid(True)
 plt.show()
-
+```
  ⁠
 
 <img width="678" height="547" alt="image" src="https://github.com/user-attachments/assets/fc9d6e19-9a60-4916-936a-b5e4d57521c8" />
@@ -146,7 +146,7 @@ Upon implementing both *Full-Batch Gradient Descent (GD)* and *Stochastic Gradie
 
 
 *
-⁠ python
+```python
 import numpy as np
 
 # -------------------------------
@@ -251,7 +251,7 @@ print("Convergence steps for Full-Batch GD and SGD (averaged over 20 runs):\n")
 print("{:<10} {:<15} {:<20}".format("Dataset", "GD steps", "SGD avg steps"))
 for res in results:
     print("{:<10} {:<15} {:<20.2f}".format(res["Dataset"], res["GD_steps"], res["SGD_avg_steps"]))
-
+```
  ⁠
 
 •⁠  ⁠*Convergence Steps for Gradient Descent*
