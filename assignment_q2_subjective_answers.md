@@ -4,6 +4,17 @@
 
 This experiment clearly demonstrates the critical importance of feature scaling for the efficient optimization of machine learning models. We used full-batch gradient descent for linear regression on a dataset with a large feature scale (`x` ranging from 0 to 1000).
 
+### Dataset
+'''python
+num_samples = 100
+np.random.seed(42)
+
+x = np.random.uniform(0, 1000, num_samples)
+f_x = 3 * x + 2
+eps = np.random.randn(num_samples)
+y = f_x + eps
+'''
+
 ### Part 1: Without Feature Scaling
 
 * **Convergence:** The optimizer struggled immensely to converge. It required an **extremely large number of iterations** to meet the convergence criterion ($\|\theta_t - \theta^*\| < 0.001$).
